@@ -7,7 +7,7 @@ const Profile = (props: Props) => {
   return (
     <View style={{
       flex:1,
-      backgroundColor:''
+      backgroundColor:'red'
     }}>
       <Text>Profile</Text>
     </View>
