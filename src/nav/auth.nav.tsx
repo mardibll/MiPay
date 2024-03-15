@@ -5,6 +5,7 @@ import Login from '../pages/auth/login';
 import Splash from '../pages/auth/splash';
 import Signup from '../pages/auth/signup';
 import TabNav from './tab.nav';
+import Settings from '../pages/profile/settings';
 
 const Stack = createStackNavigator();
 
@@ -15,6 +16,8 @@ const AuthNav = () => {
       <Stack.Screen name="Login" component={Login} />
       <Stack.Screen name="Signup" component={Signup} />
       <Stack.Screen name="TabNav" component={TabNav} />
+      <Stack.Screen name="Settings" component={Settings} />
+
     </Stack.Navigator>
   );
 };

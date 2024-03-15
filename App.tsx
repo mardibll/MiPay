@@ -1,5 +1,4 @@
 import React from 'react';
-import {StyleSheet} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import AuthNav from './src/nav/auth.nav';
 
@@ -14,5 +13,3 @@ const App = (props: Props) => {
 };
 
 export default App;
-
-const styles = StyleSheet.create({});

@@ -1,14 +1,19 @@
-import {Image, StyleSheet, Text, View} from 'react-native';
+import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import React from 'react';
 import {icRating} from '../../assets/image';
+import Statusbars from '../atoms/statusbars';
+import Icons from '../atoms/icons';
 
 type Props = {
   ishome: boolean;
   backabled: boolean;
+  bgColor: string;
+  title: string;
+  onBack: () => void;
 };
 
 const Appbar = (props: Props) => {
-  const {ishome, backabled} = props;
+  const {ishome, backabled, bgColor, title, onBack} = props;
 
   const renderHeaderHome = () => {
     return (
@@ -34,19 +39,32 @@ const Appbar = (props: Props) => {
       </View>
     );
   };
+
+  const renderHeaders = () => {
+    return (
+      <View style={styles.content}>
+        <View style={styles.row}>
+          <View style={styles.left}>
+            {backabled && (
+              <TouchableOpacity onPress={onBack}>
+                <Icons name="arrow-back-ios" size={20} color={'#FFF'} />
+              </TouchableOpacity>
+            )}
+          </View>
+          <View style={styles.center}>
+            <Text style={{color: '#FFF', fontSize: 16, fontWeight: '500'}}>
+              {title}
+            </Text>
+          </View>
+          <View style={styles.right}>{/* <Text>Ap</Text> */}</View>
+        </View>
+      </View>
+    );
+  };
   return (
     <>
-      {ishome ? (
-        renderHeaderHome()
-      ) : backabled ? (
-        <View>
-          <Text>Appbar</Text>
-        </View>
-      ) : (
-        <View>
-          <Text>Appbar</Text>
-        </View>
-      )}
+      <Statusbars bgColor={bgColor} />
+      {ishome ? renderHeaderHome() : renderHeaders()}
     </>
   );
 };
@@ -54,6 +72,9 @@ const Appbar = (props: Props) => {
 Appbar.defaultProps = {
   ishome: false,
   backabled: false,
+  bgColor: '',
+  title: '',
+  onBack: () => {},
 };
 export default Appbar;
 
@@ -108,5 +129,21 @@ const styles = StyleSheet.create({
     height: 70,
     width: 70,
     borderRadius: 50,
+  },
+  content: {
+    backgroundColor: '#4263EB',
+    padding: 15,
+  },
+  left: {
+    width: '10%',
+  },
+  center: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  right: {
+    width: '10%',
+    alignItems: 'flex-end',
   },
 });
