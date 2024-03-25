@@ -17,3 +17,7 @@ export const icTrxDefault = require('./ic-transaction-default.png');
 
 export const icIn = require('./ic-in.png');
 export const icOut = require('./ic-out.png');
+
+export const iuserAdd = require('./Icon/ic-user-add.png');
+
+export const icqris = require('./Icon/ic-qris.png');

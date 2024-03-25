@@ -1,12 +1,13 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
+import Scanner from '../../components/molecules/Scan';
 
 type Props = {};
 
 const Scann = (props: Props) => {
   return (
-    <View>
-      <Text>Scann</Text>
+    <View style={{flex: 1}}>
+      <Scanner />
     </View>
   );
 };

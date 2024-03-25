@@ -1,6 +1,7 @@
 package com.mipay
 
 import android.app.Application
+import org.reactnative.camera.RNCameraPackage; 
 import com.facebook.react.PackageList
 import com.facebook.react.ReactApplication
 import com.facebook.react.ReactHost
