@@ -6,8 +6,7 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 
 This application uses several tools/libraries, including:
 
-- [React-navigation](https://reactnavigation.org/docs/redux-integration),
-- [Reac-native Config](https://www.npmjs.com/package/react-native-config),
+- [React-navigation](https://reactnavigation.org/docs/getting-started/),
 - [native-camera](https://www.npmjs.com/package/react-native-camera),
 - [Vector icons](https://oblador.github.io/react-native-vector-icons),
 - [qrcode-scanner](https://www.npmjs.com/package/react-native-qrcode-scanner)
@@ -15,9 +14,11 @@ This application uses several tools/libraries, including:
 ## Screens App Test [Release](https://github.com/mardibll/MiPay/releases)
 
 <p align="center">
-    <img src="./AppScreens/login.png" width="60%"> 
-    <img src="./AppScreens/home.png" width="40%"> 
-    <img src="./AppScreens/card.png" width="40%"> 
+    <img src="./AppScreens/Login.png" width="30%"> 
+    <img src="./AppScreens/Sign_Up.png" width="30%"> 
+    <img src="./AppScreens/Home.png" width="30%"> 
+    <img src="./AppScreens/Transfer.png" width="30%"> 
+    <img src="./AppScreens/Profile.png" width="30%"> 
 </p>
 
 ## Getting Started

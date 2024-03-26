@@ -9,7 +9,7 @@ const Cards = (props: Props) => {
   return (
     <View style={styles.container}>
       <Text>MyCards</Text>
-      <MipayCard />
+      {/* <MipayCard />
 
       <View>
         <Text>Card Used Frequency</Text>
@@ -36,7 +36,7 @@ const Cards = (props: Props) => {
           name="plus"
           style={{fontSize: 20, color: 'white'}}
         />
-      </TouchableOpacity>
+      </TouchableOpacity> */}
     </View>
   );
 };

@@ -63,7 +63,7 @@ const Appbar = (props: Props) => {
   };
   return (
     <>
-      <Statusbars bgColor={bgColor} />
+      {/* <Statusbars bgColor={bgColor} /> */}
       {ishome ? renderHeaderHome() : renderHeaders()}
     </>
   );

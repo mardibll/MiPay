@@ -7,7 +7,8 @@ type Props = {};
 const Scann = (props: Props) => {
   return (
     <View style={{flex: 1}}>
-      <Scanner />
+      <Text>Scan</Text>
+      {/* <Scanner /> */}
     </View>
   );
 };

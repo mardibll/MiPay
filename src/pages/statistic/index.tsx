@@ -27,15 +27,15 @@ const Statistic = (props: Props) => {
     lastScrollPosition.current = currentScrollPosition;
   };
   return (
-    <ScrollView style={{paddingTop: 50, flexGrow: 1}} onScroll={handleScroll}>
-      <View style={{}}>
+    <ScrollView style={{}} onScroll={handleScroll}>
+      <Text>Static</Text>
+      {/* <View style={{}}>
         <Charts />
-        {/* <View></View> */}
         <HistoryList withHead onItem={item => {}} onSeeALl={() => {}} />
 
         <HistoryList withHead onItem={item => {}} onSeeALl={() => {}} />
         <HistoryList withHead onItem={item => {}} onSeeALl={() => {}} />
-      </View>
+      </View> */}
     </ScrollView>
   );
 };
