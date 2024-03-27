@@ -14,12 +14,12 @@ This application uses several tools/libraries, including:
 ## Screens App Test [Release](https://github.com/mardibll/MiPay/releases)
 
 <p align="center" >
-    <img src="./AppScreens/Login.png" width="30%" height=300px> 
-    <img src="./AppScreens/SignUp.png" width="30%" height=300px> 
-    <!-- <br/>
-    <img src="./AppScreens/Home.png" width="30%"> 
+    <img src="./AppScreens/login.png" width="30%" > 
+    <img src="./AppScreens/signUp.png" width="30%" > 
+    <br/>
+    <img src="./AppScreens/home.png" width="30%"> 
     <img src="./AppScreens/kirim.png" width="30%"> 
-    <img src="./AppScreens/Profile.png" width="30%">  -->
+    <img src="./AppScreens/profile.png" width="30%"> 
 </p>
 
 ## Getting Started
